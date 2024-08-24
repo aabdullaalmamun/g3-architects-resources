@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
+
+/* shared css */
+.display-flex{
+    display: flex;
+}
+
+.dark1{
+color: #131313;
+}
+.dark2{
+color: #424242;
+}
+.dark3{
+color: #727272;
+}
+.btn-primary{
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 24px;
+    border: none;
+    border-radius: 8px;
+}
+
+
+/* header */
+.header{
+    background-color: rgba(255, 144, 14, 0.1);
+    /* height: 82.5rem; */
+}
+.header-div,.banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* nav css */
+.nav{
+    justify-content: space-between;
+    margin-bottom: -50px;
+    /* background-color: red; */
+}
+.nav-item{
+    list-style: none;
+    align-items: center;
+}
+.nav-item a{
+    text-decoration: none;
+    margin-right: 50px;
+    color: #424242;
+
+}
+.nav-header{
+    font-weight: 700;
+    font-size: 3rem;
+}
+/* banner */
+.banner{
+    margin-top:auto;
+    /* background-color: blue; */
+}
+.banner-container{
+    margin: 0 auto;
+    text-align: center;
+    width: 862px;
+    /* background-color: greenyellow; */
+}
+.banner-header{
+ font-weight: 700;
+ font-size: 4rem;
+ margin-bottom: 0;
+}
+.banner-description{
+    font-size: 1rem;
+margin-bottom: 32px;
+}
+.banner-img{ 
+    margin-top: 50px;
+    width: 100%;
+}
+
+
+
+/* responsibe style */
+/* responsibe for smaller devices */
+@media screen and (max-width:576px) {
+.nav,.nav-item{
+    flex-direction: column;
+    margin-bottom: 1px;
+}  
+
+.banner-container{
+    width: auto;
+}
+.nav-header{
+    text-align: center;
+}
+.banner-header{
+    font-size: 2rem;
+}
+}
+/* responsibe for medium devices */
+@media screen and (min-width:576px) and (max-width:992px) {
+   .nav{
+    flex-direction: column;
+   }
+   .nav-header{
+    text-align: center;
+   }
+   .nav-item{
+    justify-content: center;
+   }
+   .banner-container{
+    
+    width: 100%;
+   }
+   
+}
