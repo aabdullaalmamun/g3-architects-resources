@@ -24,6 +24,9 @@ color: #424242;
 .dark3{
 color: #727272;
 }
+.orangecolor{
+   color: #FF900E;
+}
 .btn-primary{
     background-color: #FF900E;
     color: white;
@@ -38,7 +41,7 @@ color: #727272;
     background-color: rgba(255, 144, 14, 0.1);
     /* height: 82.5rem; */
 }
-.header-div,.banner{
+.header-div,.banner,main{
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -89,6 +92,80 @@ margin-bottom: 32px;
 }
 
 
+/* Quic list of our features */
+/* div-container */
+.div-container{
+    margin-top: 100px;
+    display: flex;
+}
+.div-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:24px;
+    
+}
+.div-feature{
+    
+    margin: auto;
+    width: 537px;
+    margin-right: 70px;
+}
+.div-header{
+font-size: 45px;
+margin-bottom: 24px;
+}
+.div-description{
+font-size: 16px;
+}
+
+
+ /* Features you will love & enjoy  */
+    /* feature-banner  */
+.feature-banner{
+    display: flex;
+    margin-top: 130px;
+    justify-content: space-between;
+    /* background-color: violet; */
+}
+.feature-banner-details{
+    width: 36.5rem;
+}
+.feature-banner-header{
+    border-left: 6px solid #FF900E;
+    padding-left: 21px;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.feature-item-description{
+    font-size: 16px;
+}
+.feature-item-header{
+    font-weight: bold;
+    font-size: 20px;
+    color: #131313;
+    
+}
+.feature-item-container{
+    /* background-color: green; */
+    width: 586px;
+    height: 171px;
+    padding-left: 30px;
+
+}
+
+.feature-item{
+    /* margin-left: 51px; */
+    /* background-color: blue; */
+    margin-bottom: 0px;
+    margin-top: 0px;
+    
+}
+.feature-item-header,.feature-item-description{
+    /* background-color: red; */
+}
+
+
 
 /* responsibe style */
 /* responsibe for smaller devices */
@@ -107,6 +184,27 @@ margin-bottom: 32px;
 .banner-header{
     font-size: 2rem;
 }
+.div-container{
+    flex-direction: column;
+}
+.div-img >img{
+    width: 100%;
+    
+}
+.div-feature{
+    width: 100%;
+}
+.feature-banner{
+    margin-top: 50px;
+    flex-direction: column;
+}
+
+.feature-banner-details,
+.feature-item-container{
+    width: 100%;
+    padding: 0;
+}
+
 }
 /* responsibe for medium devices */
 @media screen and (min-width:576px) and (max-width:992px) {
@@ -123,5 +221,20 @@ margin-bottom: 32px;
     
     width: 100%;
    }
+   .div-container{
+    flex-direction: column;
+}
+
+.feature-banner{
+    margin-top: 50px;
+    flex-direction: column;
+}
+
+.feature-banner-details,
+.feature-item-container{
+    width: 100%;
+    padding: 0;
+    text-align: center ;
+}
    
 }
